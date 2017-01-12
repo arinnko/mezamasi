@@ -12,6 +12,14 @@
 		0B038F3A1DDDC97A00199C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F381DDDC97A00199C0B /* Main.storyboard */; };
 		0B038F3C1DDDC97A00199C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F3B1DDDC97A00199C0B /* Assets.xcassets */; };
 		0B038F3F1DDDC97A00199C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F3D1DDDC97A00199C0B /* LaunchScreen.storyboard */; };
+		0B038F471DF0395200199C0B /* apuri3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F461DF0395200199C0B /* apuri3.png */; };
+		0B038F491DF03A1500199C0B /* apuri1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F481DF03A1500199C0B /* apuri1.png */; };
+		0B038F4B1DF03E0B00199C0B /* apuri3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F4A1DF03E0B00199C0B /* apuri3.png */; };
+		0B038F4D1DF961F600199C0B /* apuri5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F4C1DF961F600199C0B /* apuri5.png */; };
+		0B038F4F1DF9700400199C0B /* apuri6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F4E1DF9700400199C0B /* apuri6.png */; };
+		0B038F511DF9713400199C0B /* apuri7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F501DF9713400199C0B /* apuri7.png */; };
+		0BEB21281E02965500314D5D /* apuri8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BEB21271E02965500314D5D /* apuri8.png */; };
+		0BEB212A1E0296BD00314D5D /* apuri9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BEB21291E0296BD00314D5D /* apuri9.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		0B038F3B1DDDC97A00199C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B038F3E1DDDC97A00199C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B038F401DDDC97A00199C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B038F461DF0395200199C0B /* apuri3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri3.png; sourceTree = "<group>"; };
+		0B038F481DF03A1500199C0B /* apuri1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri1.png; sourceTree = "<group>"; };
+		0B038F4A1DF03E0B00199C0B /* apuri3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri3.png; sourceTree = "<group>"; };
+		0B038F4C1DF961F600199C0B /* apuri5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri5.png; sourceTree = "<group>"; };
+		0B038F4E1DF9700400199C0B /* apuri6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri6.png; sourceTree = "<group>"; };
+		0B038F501DF9713400199C0B /* apuri7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri7.png; sourceTree = "<group>"; };
+		0BEB21271E02965500314D5D /* apuri8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri8.png; sourceTree = "<group>"; };
+		0BEB21291E0296BD00314D5D /* apuri9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri9.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,14 @@
 				0B038F341DDDC97A00199C0B /* AppDelegate.swift */,
 				0B038F361DDDC97A00199C0B /* ViewController.swift */,
 				0B038F381DDDC97A00199C0B /* Main.storyboard */,
+				0B038F4C1DF961F600199C0B /* apuri5.png */,
+				0B038F461DF0395200199C0B /* apuri3.png */,
+				0B038F4E1DF9700400199C0B /* apuri6.png */,
+				0B038F4A1DF03E0B00199C0B /* apuri3.png */,
+				0BEB21291E0296BD00314D5D /* apuri9.png */,
+				0BEB21271E02965500314D5D /* apuri8.png */,
+				0B038F481DF03A1500199C0B /* apuri1.png */,
+				0B038F501DF9713400199C0B /* apuri7.png */,
 				0B038F3B1DDDC97A00199C0B /* Assets.xcassets */,
 				0B038F3D1DDDC97A00199C0B /* LaunchScreen.storyboard */,
 				0B038F401DDDC97A00199C0B /* Info.plist */,
@@ -124,8 +148,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B038F3F1DDDC97A00199C0B /* LaunchScreen.storyboard in Resources */,
+				0B038F4D1DF961F600199C0B /* apuri5.png in Resources */,
+				0B038F471DF0395200199C0B /* apuri3.png in Resources */,
 				0B038F3C1DDDC97A00199C0B /* Assets.xcassets in Resources */,
+				0B038F4F1DF9700400199C0B /* apuri6.png in Resources */,
+				0B038F4B1DF03E0B00199C0B /* apuri3.png in Resources */,
+				0B038F491DF03A1500199C0B /* apuri1.png in Resources */,
 				0B038F3A1DDDC97A00199C0B /* Main.storyboard in Resources */,
+				0BEB212A1E0296BD00314D5D /* apuri9.png in Resources */,
+				0BEB21281E02965500314D5D /* apuri8.png in Resources */,
+				0B038F511DF9713400199C0B /* apuri7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +329,7 @@
 				0B038F451DDDC97A00199C0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
