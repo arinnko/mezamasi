@@ -22,6 +22,10 @@ class AgurimoaiViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func back(){
+        //↓画面戻るコード
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

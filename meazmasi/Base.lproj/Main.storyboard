@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="LSa-th-el6">
             <objects>
-                <viewController id="R30-58-h2e" sceneMemberID="viewController">
+                <viewController id="R30-58-h2e" customClass="SettingViewController" customModule="meazmasi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Qx-OJ-eUz"/>
                         <viewControllerLayoutGuide type="bottom" id="dJc-BI-SMT"/>
@@ -103,13 +103,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97370679083406775" green="1" blue="0.97727323589296022" alpha="1" colorSpace="calibratedRGB"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年齢層" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-oG-KKz">
-                                <rect key="frame" x="18" y="265" width="67" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nicoca" family="Nicoca" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-AN-hQ6">
                                 <rect key="frame" x="18" y="386" width="67" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -144,6 +137,13 @@
                                 <rect key="frame" x="11" y="262" width="86" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年齢層" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-oG-KKz">
+                                <rect key="frame" x="18" y="265" width="67" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nicoca" family="Nicoca" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95698393439273766" green="0.99915881903828097" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="908" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting2 View Controller-->
         <scene sceneID="PMs-4F-FD6">
             <objects>
-                <viewController id="jnw-tT-zGd" sceneMemberID="viewController">
+                <viewController id="jnw-tT-zGd" customClass="Setting2ViewController" customModule="meazmasi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FRy-gO-wIu"/>
                         <viewControllerLayoutGuide type="bottom" id="WcI-jf-WgJ"/>
@@ -305,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="1692" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Agurimoai View Controller-->
         <scene sceneID="jfW-lE-odH">
             <objects>
-                <viewController id="Cfl-ep-KlM" sceneMemberID="viewController">
+                <viewController id="Cfl-ep-KlM" customClass="AgurimoaiViewController" customModule="meazmasi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3eh-XS-szc"/>
                         <viewControllerLayoutGuide type="bottom" id="dN9-1K-vmR"/>
@@ -330,10 +330,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpm-NK-xVW">
-                                <rect key="frame" x="128" y="435" width="119" height="87"/>
+                                <rect key="frame" x="128" y="442" width="119" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99342317388125057" green="1" blue="0.9847966963531869" alpha="0.6170528017241379" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back" destination="Cfl-ep-KlM" eventType="touchUpInside" id="xKr-CH-CIf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

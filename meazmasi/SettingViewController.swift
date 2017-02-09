@@ -10,6 +10,8 @@
 import UIKit
 
 class SettingViewController: UIViewController {
+    @IBOutlet var seibetuPickerView: UIPickerView!
+    @IBOutlet var nennreiPickerView: UIPickerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
