@@ -9,12 +9,20 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     @IBOutlet var seibetuPickerView: UIPickerView!
     @IBOutlet var nennreiPickerView: UIPickerView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        seibetuPickerView.delegate = self
+        nennreiPickerView.delegate = self
+        
+        seibetuPickerView.dataSource = self
+        nennreiPickerView.dataSource = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -24,6 +32,28 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //要素の数
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+
+    //行数&選択肢の数
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if seibetuPickerView == pickerView{
+            return 2
+        } else {
+            return 6
+        }
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
+        
+            <#code#>
+        }
+        
+    }
+
 
     /*
     // MARK: - Navigation
