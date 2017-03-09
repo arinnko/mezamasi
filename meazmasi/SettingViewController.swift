@@ -13,6 +13,7 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet var seibetuPickerView: UIPickerView!
     @IBOutlet var nennreiPickerView: UIPickerView!
     @IBOutlet var namaeTextField: UITextField!
+    let userDefaults = UserDefaults.standard
     
     var seibetuArray = ["男","女"]
     var nennreiArray = ["１０代","２０代","３０代","４０代","５０代","５０代以上"]
@@ -41,6 +42,13 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         textField.resignFirstResponder()
         return true
     }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        //名前保存
+        userDefaults.set(namaeTextField.text, forKey:"nameLabel")
+    }// if implemented, called in place of textFieldDidEndEditing:
+
     
     
     //要素の数

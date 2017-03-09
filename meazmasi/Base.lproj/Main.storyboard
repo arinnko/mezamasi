@@ -29,25 +29,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apuri19.png" translatesAutoresizingMaskIntoConstraints="NO" id="My3-lm-eP2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apuri3.png" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-oh-P3d">
-                                <rect key="frame" x="112" y="181" width="256" height="121"/>
+                                <rect key="frame" x="57" y="108" width="260" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apuri1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yqh-W2-F7J">
-                                <rect key="frame" x="16" y="239" width="95" height="83"/>
+                                <rect key="frame" x="92" y="230" width="193" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="こんにちは！　　　　　　　　　質問に答えて登録してね" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lew-9r-dVs">
-                                <rect key="frame" x="136" y="200" width="215" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="まる、おきて！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lew-9r-dVs">
+                                <rect key="frame" x="80" y="108" width="215" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nicoca" family="Nicoca" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="mini-wakuwaku" family="mini-wakuwaku" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sW3-eh-bv5">
-                                <rect key="frame" x="114" y="444" width="146" height="91"/>
+                                <rect key="frame" x="114" y="445" width="146" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9600053106317985" blue="0.65165439281851478" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.73102725920225997" blue="0.72338295164807087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Nicoca" family="Nicoca" pointSize="25"/>
                                 <state key="normal" title="始める！">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,6 +152,7 @@
                         <color key="backgroundColor" red="0.95698393439273766" green="0.99915881903828097" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="namaeTextField" destination="JyT-fE-8eD" id="EuZ-gb-lE7"/>
                         <outlet property="nennreiPickerView" destination="GHm-MM-uw8" id="xMB-XE-66s"/>
                         <outlet property="seibetuPickerView" destination="9P8-dq-4hu" id="qEs-5C-5R8"/>
                     </connections>
@@ -238,19 +243,6 @@
                                         <rect key="frame" x="16" y="20" width="57" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyx-Am-h9B">
-                                        <rect key="frame" x="68" y="149" width="275" height="169"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    </pickerView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKf-fc-3a8">
-                                        <rect key="frame" x="96" y="36" width="124" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="124" id="bEW-DF-Yt6"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="さん" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1l-7P-Ifj">
                                         <rect key="frame" x="228" y="46" width="60" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -298,12 +290,34 @@
                                             <segue destination="Cfl-ep-KlM" kind="show" id="He8-Q4-xv5"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcJ-e8-RvZ">
+                                        <rect key="frame" x="81" y="34" width="130" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="G9w-ru-Ogs">
+                                        <rect key="frame" x="65" y="162" width="244" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="510748971.14568597">
+                                            <!--2017-03-09 10:42:51 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="changeDateWithSender:" destination="jnw-tT-zGd" eventType="valueChanged" id="Q1c-ZA-S1N"/>
+                                        </connections>
+                                    </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="G9w-ru-Ogs" id="Loy-8A-0TY"/>
+                        <outlet property="nameLabel" destination="WcJ-e8-RvZ" id="bLR-bS-4kj"/>
+                        <outlet property="textField" destination="Vfs-ja-B4t" id="CJc-Yq-ajx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruI-Gq-UkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,23 +339,23 @@
                                 <rect key="frame" x="0.0" y="-11" width="375" height="678"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpm-NK-xVW">
+                                <rect key="frame" x="128" y="531" width="119" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99342317388125057" green="1" blue="0.9847966963531869" alpha="0.6170528017241379" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="設定に戻る"/>
+                                <connections>
+                                    <action selector="back" destination="Cfl-ep-KlM" eventType="touchUpInside" id="xKr-CH-CIf"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目覚ましを設定しました。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqA-fP-8oL">
-                                <rect key="frame" x="78" y="108" width="231" height="81"/>
+                                <rect key="frame" x="80" y="28" width="231" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95248478542065629" green="0.75186901334179046" blue="1" alpha="0.6170528017241379" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Nicoca" family="Nicoca" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpm-NK-xVW">
-                                <rect key="frame" x="128" y="442" width="119" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99342317388125057" green="1" blue="0.9847966963531869" alpha="0.6170528017241379" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="back" destination="Cfl-ep-KlM" eventType="touchUpInside" id="xKr-CH-CIf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -358,6 +372,7 @@
         <image name="apuri15.png" width="888" height="538"/>
         <image name="apuri16.png" width="868" height="540"/>
         <image name="apuri18.png" width="722" height="880"/>
+        <image name="apuri19.png" width="902" height="1398"/>
         <image name="apuri3.png" width="600" height="320"/>
         <image name="apuri5.png" width="568" height="1060"/>
     </resources>

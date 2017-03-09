@@ -8,17 +8,45 @@
 
 import UIKit
 
-class Setting2ViewController: UIViewController {
-
+class Setting2ViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var datePicker: UIDatePicker!
+    let userDefaults = UserDefaults.standard
+    @IBOutlet var textField:UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datePicker.locale = Locale(identifier: "ja_JP")
+        
+        datePicker.minuteInterval = 5
+        
+        textField.delegate = self
+
+        
+        if let labelText = userDefaults.string(forKey:"nameLabel") {
+            nameLabel.text = labelText
+        }
 
         // Do any additional setup after loading the view.
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //データ変更時の呼び出しメソッド
+    @IBAction func changeDate(sender: UIDatePicker) {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
     }
     
 
