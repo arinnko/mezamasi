@@ -10,10 +10,13 @@
 import UIKit
 
 class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource ,UITextFieldDelegate {
+
     @IBOutlet var seibetuPickerView: UIPickerView!
     @IBOutlet var nennreiPickerView: UIPickerView!
     @IBOutlet var namaeTextField: UITextField!
     let userDefaults = UserDefaults.standard
+    
+    
     
     var seibetuArray = ["男","女"]
     var nennreiArray = ["１０代","２０代","３０代","４０代","５０代","５０代以上"]

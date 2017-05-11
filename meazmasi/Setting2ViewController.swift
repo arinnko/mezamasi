@@ -12,6 +12,7 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var datePicker: UIDatePicker!
     let userDefaults = UserDefaults.standard
+    let now = NSDate()
     @IBOutlet var textField:UITextField!
     
     
@@ -49,8 +50,7 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
     }
     
-
-    /*
+        /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

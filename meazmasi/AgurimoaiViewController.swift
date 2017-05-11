@@ -10,6 +10,8 @@
 import UIKit
 
 class AgurimoaiViewController: UIViewController {
+    
+    @IBOutlet var timeTextField:UITextField
 
     override func viewDidLoad() {
         super.viewDidLoad()
