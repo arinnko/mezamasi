@@ -11,10 +11,15 @@ import UIKit
 
 class AgurimoaiViewController: UIViewController {
     
-    @IBOutlet var timeTextField:UITextField
+    @IBOutlet var timeTextField:UITextField?
+    @IBOutlet var nowTimeLabel: UILabel!
+    var utility = Utility()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nowTimeLabel.text = utility.nowTimeGet()
 
         // Do any additional setup after loading the view.
     }
@@ -40,3 +45,16 @@ class AgurimoaiViewController: UIViewController {
     */
 
 }
+class Utility {
+    // 現在時刻を"yyyy/MM/dd HH:mm:ss"のString型で返すクラスメソッド
+    func nowTimeGet() -> String {
+        // 現在時刻を取得
+        let now = NSDate()
+        let formatter = DateFormatter()
+        // 好きなフォーマットを設定する
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        let str = formatter.string(from: now as Date)
+        return str
+    }
+}
+

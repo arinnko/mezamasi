@@ -21,17 +21,11 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     var seibetuArray = ["男","女"]
     var nennreiArray = ["１０代","２０代","３０代","４０代","５０代","５０代以上"]
     
-
-
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         seibetuPickerView.delegate = self
         nennreiPickerView.delegate = self
         namaeTextField.delegate = self
-
         // Do any additional setup after loading the view.
     }
 
@@ -92,3 +86,8 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     */
 }
+
+
+
+
+
