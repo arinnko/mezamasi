@@ -17,37 +17,7 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var textField:UITextField!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        datePicker.locale = Locale(identifier: "ja_JP")
-        
-        datePicker.minuteInterval = 5
-//        datePicker.addTarget(self, action: #selector(updatePickerValue(sender:)), for: .v)
-        
-        textField.delegate = self
-
-        
-        if let labelText = userDefaults.string(forKey:"nameLabel") {
-            nameLabel.text = labelText
-        }
-
-        // Do any additional setup after loading the view.
-        
-        tuchi()
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    //データ変更時の呼び出しメソッド
     @IBAction func changeDate(sender: UIDatePicker) {
         
         let formatter = DateFormatter()
@@ -62,6 +32,60 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
         let day = calendar.component(.day, from: sender.date)
         let hour = calendar.component(.hour, from: sender.date)
         let minute = calendar.component(.minute, from: sender.date)
+    }
+    
+    
+    //最初に呼ばれるとこ
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        datePicker.locale = Locale(identifier: "ja_JP")
+        datePicker.datePickerMode = .time
+        
+        self.view.addSubview(datePicker)
+        
+        datePicker.minuteInterval = 5
+//        datePicker.addTarget(self, action: #selector(updatePickerValue(sender:)), for: .v)
+        
+        textField.delegate = self
+
+        
+        if let labelText = userDefaults.string(forKey:"nameLabel") {
+            nameLabel.text = labelText
+        }
+        
+    
+    }
+
+//    //時間と分を取得
+//    func getHourAndMin(date: Date)->String {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "HH:mm"
+//        let text = formatter.string(from: date)
+//        return text
+//    }
+//    
+//    func getTimeToAlert(time1: String, time2: String) {
+//        
+//    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        let setTime = datePicker.date
+        let nowTime = Date()
+        let dif = setTime.timeIntervalSince(nowTime)
+        print(dif)
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     
@@ -102,7 +126,12 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
         })
         center.add(request)
         
-
-        
     }
+    
+    @IBAction func tapButton(){
+    
+    }
+        
+
+
 }
