@@ -14,8 +14,11 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var datePicker: UIDatePicker!
     let userDefaults = UserDefaults.standard
     let now = NSDate()
+    var setTime: Data!
     @IBOutlet var textField:UITextField!
     
+    var hour:Int!
+    var minute:Int!
     
     
     @IBAction func changeDate(sender: UIDatePicker) {
@@ -30,8 +33,8 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
         
         let calendar = Calendar.current
         let day = calendar.component(.day, from: sender.date)
-        let hour = calendar.component(.hour, from: sender.date)
-        let minute = calendar.component(.minute, from: sender.date)
+        hour = calendar.component(.hour, from: sender.date)
+        minute = calendar.component(.minute, from: sender.date)
     }
     
     
@@ -71,10 +74,10 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        let setTime = datePicker.date
+        /*setTime = datePicker.date
         let nowTime = Date()
         let dif = setTime.timeIntervalSince(nowTime)
-        print(dif)
+        print(dif)*/
     }
     
     
@@ -106,32 +109,24 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     */
 
     
-    func tuchi(){
-        let content = UNMutableNotificationContent()
-        content.title = "Hello!"
-        content.body = "It's time!"
-        content.sound = UNNotificationSound.default()
         
-        // UNCalendarNotificationTrigger 作成
-        let date = DateComponents(hour:20, minute:1)
-        let trigger = UNCalendarNotificationTrigger.init(dateMatching: date, repeats: false)
-        
-        // id, content, trigger から UNNotificationRequest 作成
-        let request = UNNotificationRequest.init(identifier: "CalendarNotification", content: content, trigger: trigger)
-        
-        // UNUserNotificationCenter に request を追加
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert,.sound], completionHandler: {
-            (error) in
-        })
-        center.add(request)
-        
-    }
-    
     @IBAction func tapButton(){
-    
+        performSegue(withIdentifier: "aguri", sender: nil)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AgurimoaiViewController
+        //vc.moji = setTime!
+        
+        vc.hour = hour
+        vc.minute = minute
+    }
+    
+}
         
 
 
-}
+
+
+

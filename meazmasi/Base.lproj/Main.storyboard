@@ -210,7 +210,8 @@
                                 <fontDescription key="fontDescription" name="Nicoca" family="Nicoca" pointSize="17"/>
                                 <state key="normal" title="目覚ましをかける"/>
                                 <connections>
-                                    <segue destination="Cfl-ep-KlM" kind="presentation" id="ayf-Af-Ppf"/>
+                                    <action selector="tapButton" destination="jnw-tT-zGd" eventType="touchUpInside" id="j1E-6T-QNG"/>
+                                    <segue destination="Cfl-ep-KlM" kind="presentation" identifier="aguri" id="ayf-Af-Ppf"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apuri12.png" translatesAutoresizingMaskIntoConstraints="NO" id="X5G-9h-MxQ">

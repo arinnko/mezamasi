@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AgurimoaiViewController: UIViewController {
     
@@ -15,12 +16,19 @@ class AgurimoaiViewController: UIViewController {
     @IBOutlet var nowTimeLabel: UILabel!
     var utility = Utility()
     
+    var moji: String!
+    
+//    var time = setTime!
+    
+    var hour:Int!
+    var minute:Int!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         nowTimeLabel.text = utility.nowTimeGet()
 
+        tuchi()
         // Do any additional setup after loading the view.
     }
 
@@ -33,16 +41,29 @@ class AgurimoaiViewController: UIViewController {
         //↓画面戻るコード
         dismiss(animated: true, completion: nil)
     }
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tuchi(){
+        let content = UNMutableNotificationContent()
+        content.title = "Hello!"
+        content.body = "It's time!"
+        content.sound = UNNotificationSound.default()
+        
+        // UNCalendarNotificationTrigger 作成
+        let date = DateComponents(hour:hour, minute:minute)
+        let trigger = UNCalendarNotificationTrigger.init(dateMatching: date, repeats: false)
+        
+        // id, content, trigger から UNNotificationRequest 作成
+        let request = UNNotificationRequest.init(identifier: "CalendarNotification", content: content, trigger: trigger)
+        
+        // UNUserNotificationCenter に request を追加
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert,.sound], completionHandler: {
+            (error) in
+        })
+        center.add(request)
+        
     }
-    */
 
 }
 class Utility {
