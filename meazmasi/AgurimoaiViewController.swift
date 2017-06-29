@@ -27,7 +27,7 @@ class AgurimoaiViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nowTimeLabel.text = utility.nowTimeGet()
-
+        print("設定した時間は、", hour, minute)
         tuchi()
         // Do any additional setup after loading the view.
     }
@@ -62,7 +62,7 @@ class AgurimoaiViewController: UIViewController {
             (error) in
         })
         center.add(request)
-        
+        print("setup tuchi")
     }
 
 }

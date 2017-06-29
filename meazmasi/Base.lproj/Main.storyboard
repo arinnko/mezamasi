@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruI-Gq-UkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1708" y="148"/>
         </scene>
         <!--Agurimoai View Controller-->
         <scene sceneID="jfW-lE-odH">

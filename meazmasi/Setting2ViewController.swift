@@ -20,24 +20,6 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     var hour:Int!
     var minute:Int!
     
-    
-    @IBAction func changeDate(sender: UIDatePicker) {
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd HH:mm"
-        print(formatter.string(from: sender.date))
-        
-        
-        
-        print("aaaaa")
-        
-        let calendar = Calendar.current
-        let day = calendar.component(.day, from: sender.date)
-        hour = calendar.component(.hour, from: sender.date)
-        minute = calendar.component(.minute, from: sender.date)
-    }
-    
-    
     //最初に呼ばれるとこ
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,16 +30,43 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
         self.view.addSubview(datePicker)
         
         datePicker.minuteInterval = 5
-//        datePicker.addTarget(self, action: #selector(updatePickerValue(sender:)), for: .v)
-        
+        datePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
+        getNow()
         textField.delegate = self
 
         
         if let labelText = userDefaults.string(forKey:"nameLabel") {
             nameLabel.text = labelText
         }
-        
+    }
     
+    //ぴっかぁ動かさないと落ちちゃうから、このコードをかいたよぉーーー
+    func getNow() {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        print(formatter.string(from: datePicker.date))
+        
+        print("日付が変わったよ")
+        
+        let calendar = Calendar.current
+        let day = calendar.component(.day, from: datePicker.date)
+        hour = calendar.component(.hour, from: datePicker.date)
+        minute = calendar.component(.minute, from: datePicker.date)
+        
+    }
+    
+    func dateChanged(_ sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        print(formatter.string(from: sender.date))
+        
+        print("日付が変わったよ")
+        
+        let calendar = Calendar.current
+        let day = calendar.component(.day, from: sender.date)
+        hour = calendar.component(.hour, from: sender.date)
+        minute = calendar.component(.minute, from: sender.date)
     }
 
 //    //時間と分を取得
@@ -118,7 +127,7 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! AgurimoaiViewController
         //vc.moji = setTime!
-        
+        print("値を渡したよ", hour, minute)
         vc.hour = hour
         vc.minute = minute
     }
