@@ -45,8 +45,8 @@ class AgurimoaiViewController: UIViewController {
 
     func tuchi(){
         let content = UNMutableNotificationContent()
-        content.title = "Hello!"
-        content.body = "It's time!"
+        content.title = "Good morning!"
+        content.body = moji!
         content.sound = UNNotificationSound.default()
         
         // UNCalendarNotificationTrigger 作成

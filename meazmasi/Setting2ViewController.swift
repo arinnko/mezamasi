@@ -130,6 +130,7 @@ class Setting2ViewController: UIViewController, UITextFieldDelegate {
         print("値を渡したよ", hour, minute)
         vc.hour = hour
         vc.minute = minute
+        vc.moji = textField.text
     }
     
 }

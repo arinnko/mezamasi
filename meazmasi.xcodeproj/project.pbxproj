@@ -18,6 +18,7 @@
 		0B038F4D1DF961F600199C0B /* apuri5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F4C1DF961F600199C0B /* apuri5.png */; };
 		0B038F4F1DF9700400199C0B /* apuri6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B038F4E1DF9700400199C0B /* apuri6.png */; };
 		0B10B9371E71591B0029483C /* apuri19.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B10B9361E71591B0029483C /* apuri19.png */; };
+		0B72E1081F0E515C0005EF8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B72E1071F0E515C0005EF8F /* icon.png */; };
 		0BC612C31E30CE53008F7017 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC612C21E30CE53008F7017 /* SettingViewController.swift */; };
 		0BC612C51E30D01B008F7017 /* apuri10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC612C41E30D01B008F7017 /* apuri10.png */; };
 		0BC612CC1E30D0E2008F7017 /* mini-wakuwaku-maru.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC612C91E30D0E2008F7017 /* mini-wakuwaku-maru.otf */; };
@@ -53,6 +54,7 @@
 		0B038F4C1DF961F600199C0B /* apuri5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri5.png; sourceTree = "<group>"; };
 		0B038F4E1DF9700400199C0B /* apuri6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri6.png; sourceTree = "<group>"; };
 		0B10B9361E71591B0029483C /* apuri19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri19.png; sourceTree = "<group>"; };
+		0B72E1071F0E515C0005EF8F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0BC612C21E30CE53008F7017 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0BC612C41E30D01B008F7017 /* apuri10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apuri10.png; sourceTree = "<group>"; };
 		0BC612C91E30D0E2008F7017 /* mini-wakuwaku-maru.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mini-wakuwaku-maru.otf"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				0BD61F621E4C7A84002BA678 /* Setting2ViewController.swift */,
 				0BD61F641E4C7AB1002BA678 /* AgurimoaiViewController.swift */,
 				0B038F381DDDC97A00199C0B /* Main.storyboard */,
+				0B72E1071F0E515C0005EF8F /* icon.png */,
 				0BC612C41E30D01B008F7017 /* apuri10.png */,
 				0B038F4C1DF961F600199C0B /* apuri5.png */,
 				0B038F461DF0395200199C0B /* apuri3.png */,
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B72E1081F0E515C0005EF8F /* icon.png in Resources */,
 				0BC612D91E30D32E008F7017 /* README_E in Resources */,
 				0BC612D71E30D32E008F7017 /* LICENSE_E in Resources */,
 				0B038F3F1DDDC97A00199C0B /* LaunchScreen.storyboard in Resources */,
