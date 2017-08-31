@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
+    @IBAction func tapButton(){
+        performSegue(withIdentifier: "toSetting", sender: nil)
+    }
+
+
+    
 
 
 }
